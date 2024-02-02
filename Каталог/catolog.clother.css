@@ -1,0 +1,124 @@
+.header {
+    width: 95%;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    z-index: 99;
+    margin: 0;
+   }
+.top {
+    color: #00ffbb;
+    font-size:25px;
+    text-decoration: none;
+    padding: 10px;
+    }
+
+.navigation {
+    background-color: #0a0c41;
+
+}
+.mapNavigation {
+    margin-left: 300px;
+}
+.linkNavigation {
+    color: #00ffbb;
+    font-size:25px;
+    text-decoration: none;
+}
+.imgSporMan {
+width: 100%;
+height: 600px;
+background-image: url(imagine/catolog_clother.jpg);
+}
+
+.navCatolog {
+    background-color: rgb(138, 33, 65);
+    width: 100%;
+    height: 30px;
+}
+.basikPage {
+   display: inline-flex;
+   justify-content: center;
+    align-items: center;
+    background-color: #111574;
+    width: 100%;
+    height: 450px;
+    padding: 25px 25px 25px 25px;
+   
+}
+.assortment {
+    display: inline-block;
+    background-color: rgb(23, 138, 184);
+    width: 260px;
+    height: 220px;
+    margin-right: 50px;
+}
+.tshort_promo {
+    width: 100%;
+    height: 80%;
+    background-image: url(imagine/tshort-promo.jpg);
+    background-size: cover;
+}
+.cimono_promo {
+    width: 100%;
+    height: 80%;
+    background-image: url(catolog.clother_img/kimono.jpg);
+    background-size: cover;
+}
+.shose_promo {
+    width: 100%;
+    height: 80%;
+    background-image: url(catolog.clother_img/shose.png);
+    background-size: cover;
+}
+.sute_promo {
+    width: 100%;
+    height: 80%;
+    background-image: url(catolog.clother_img/sute.jpg);
+    background-size: cover;
+}
+.protect_promo {
+    width: 100%;
+    height: 80%;
+    background-image: url(catolog.clother_img/protect.jpg);
+    background-size: cover;
+}
+.sport_sute_promo {
+    width: 100%;
+    height: 80%;
+    background-image: url(catolog.clother_img/sport_sute.jpg);
+    background-size: cover;
+}
+.casual_promo {
+    width: 100%;
+    height: 80%;
+    background-image: url(catolog.clother_img/casual.jpg);
+    background-size: cover;
+}
+.merc_promo {
+    width: 100%;
+    height: 80%;
+    background-image: url(catolog.clother_img/merc.png);
+    background-size: cover;
+}
+
+.assortment_text {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #0a0c41;
+    width: 100%;
+    height: 20%;
+    
+}
+.newPageCatalog {
+    color: #00ffbb;
+    font-size:25px;
+    text-decoration: none;
+}
+.botoom {
+    width: 100%;
+    height: 100px;
+    background-color: #0a0c41;
+}

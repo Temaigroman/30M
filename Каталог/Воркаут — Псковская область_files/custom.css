@@ -1,0 +1,8 @@
+/* промотка на случай, если модальное окно не помещается на экране */
+.modal-body {
+	max-height: 85vh;
+	overflow-y: auto;
+}
+.custom-cursor-pointer{
+	cursor: pointer;
+}

@@ -1,0 +1,124 @@
+/*---------------------
+forms-input
+-----------------------*/
+li a span.text {
+	color: var(--main-color-normal);
+}
+
+.filter-option-inner-inner {
+	color: white;
+}
+
+form h5.forms-input {
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+input.forms-input,
+input.forms-input:focus,
+input.forms-input:hover,
+textarea.forms-input,
+textarea.forms-input:focus,
+textarea.forms-input:hover,
+select.forms-input,
+select.forms-input:focus,
+select.forms-input:hover
+{
+	font-size: 1em;
+	color: inherit;
+	width: 100%;
+	height: 46px;
+	border: 1px solid #363636;
+	padding-left: 5px;
+	padding-right: 5px;
+	/*background: transparent;*/
+	background: var(--main-color-dark);
+}
+
+input.forms-input[readonly], input.forms-input[disabled] {
+	background: var(--main-color-dark3);
+}
+
+.selectpicker button{
+	background: var(--accent-color-normal);
+}
+
+.style-selectpicker{
+	background: var(--main-color-dark);
+	color: white;
+	height: 46px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+input.forms-input::-webkit-input-placeholder, select.forms-input::-webkit-input-placeholder {
+	color: inherit;
+}
+
+input.forms-input::-moz-placeholder ,select.forms-input::-moz-placeholder {
+	color: inherit;
+}
+
+input.forms-input:-ms-input-placeholder,select.forms-input:-ms-input-placeholder  {
+	color: inherit;
+}
+
+input.forms-input::-ms-input-placeholder,select.forms-input::-ms-input-placeholder  {
+	color: inherit;
+}
+
+input.forms-input::placeholder, select.forms-input::placeholder {
+	color: inherit;
+}
+
+textarea.forms-input {
+	font-size: 1em;
+	color: inherit;
+	width: 100%;
+	height: 100px;
+	border: 1px solid #363636;
+	padding-left: 20px;
+	padding-top: 12px;
+	padding-right: 5px;
+	background: transparent;
+	margin-bottom: 14px;
+	resize: none;
+}
+
+textarea.forms-input::-webkit-input-placeholder {
+	color: inherit;
+}
+
+textarea.forms-input::-moz-placeholder {
+	color: inherit;
+}
+
+textarea.forms-input:-ms-input-placeholder {
+	color: inherit;
+}
+
+textarea.forms-input::-ms-input-placeholder {
+	color: inherit;
+}
+
+textarea.forms-input::placeholder {
+	color: inherit;
+}
+
+button.forms-input, button.forms-input.forms-input{
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 100%;
+	border: none;
+	padding: 14px 0 12px;
+	background: var(--accent-color-normal);
+}
+
+/*---------------------
+  end forms
+-----------------------*/
