@@ -73,5 +73,18 @@ function pause () {
 }
  */
 
-let btn_modal = document.getElementById('btn_modal')
-let modal_block = document.getElementById('modal-block')
+
+let modal = document.getElementById("myModal");
+let openModalBtn = document.getElementById("openModalBtn");
+let closeModalBtn = document.getElementsByClassName("close")[0];
+
+function openModal() {
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+openModalBtn.addEventListener("click", openModal);
+closeModalBtn.addEventListener("click", closeModal);

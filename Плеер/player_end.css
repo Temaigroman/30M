@@ -190,16 +190,36 @@ border: solid #1361f1;
     background-color: #527c82;
   }
   
-  /* Модальное окно */
-  .modal-block { 
-    position: absolute;
-    background-color:#527c82;
-    color: #fff;
-    width: 801;
-    height: 877px;
-    transition: all .5s;
-    font-family: 'Raleway', sans-serif;
-    z-index: 999;
-   /*  display: none; */
-     
+  /* Скрываем модальное окно по умолчанию */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a38cf;
+    overflow: auto;
+    color:#ffffff
   }
+  
+  /* Стили для содержимого модального окна */
+  .modal-content {
+    background-color: #0a38cf;
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+    height: 70%;
+    font-size: 36px;
+    }
+
+    .close {
+        position: relative;
+        left: 950px;
+        font-size: 72px;
+        text-align: right;
+    }
+    .close:hover {
+        cursor: pointer;
+    }
