@@ -201,8 +201,9 @@ border: solid #1361f1;
     height: 100%;
     background-color: #0a38cf;
     overflow: auto;
-    color:#ffffff
-  }
+    color:#ffffff;
+}
+    
   
   /* Стили для содержимого модального окна */
   .modal-content {
