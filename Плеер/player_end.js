@@ -1,7 +1,7 @@
 let point = document.querySelectorAll('.point')
 let imageSlider = document.querySelectorAll('.imageSlider')
-let leftBtn = document.getElementById('leftBtn')
-let rightBtn = document.getElementById('rightBtn')
+let back = document.getElementById('back')
+let next = document.getElementById('next')
 
 point[0].classList.add('activeImage')
 imageSlider[0].classList.add('activeImage')
@@ -20,7 +20,7 @@ counter = i;
     })
 }
 
-leftBtn.addEventListener('click',()=> {
+back.addEventListener('click',()=> {
     for (let k = 0; k < imageSlider.length; k++) {
         point[k].classList.remove('activeImage')
         imageSlider[k].classList.remove('activeImage')
@@ -35,7 +35,7 @@ leftBtn.addEventListener('click',()=> {
 })
 
 
-rightBtn.addEventListener('click',()=>{
+next.addEventListener('click',()=>{
     for(let k = 0; k<imageSlider.length; k++){
         point[k].classList.remove('activeImage')
         imageSlider[k].classList.remove('activeImage')
@@ -48,7 +48,7 @@ rightBtn.addEventListener('click',()=>{
     point[counter].classList.add('activeImage');
 })
 
-// Кнопка стар/пауза
+/* // Кнопка стар/пауза
 
 const icon = document.getElementById("control");
 icon.addEventListener("click", function () {
@@ -71,3 +71,4 @@ function play() {
 function pause () {
     gif.pause();
 }
+ */
