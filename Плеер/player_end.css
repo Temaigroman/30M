@@ -13,7 +13,6 @@ position: fixed;
     width: 55%;
     height: 100%;
     display: block;
-
 }
 
 .diskription_traning {
@@ -100,7 +99,6 @@ border: solid #1361f1;
     -moz-box-shadow: 0px 15px 6px -5px rgba(28, 47, 61, 0.2);
     box-shadow: 0px 15px 6px -5px rgba(28, 47, 61, 0.2);
     background-color: rgb(245, 82, 117);
-    font-size: 12pt;
     border: none;
     border-radius: 30px;
     color:#ffffff;
@@ -169,5 +167,39 @@ border: solid #1361f1;
             background: rgb(160, 167, 243);
         }
         
-
-        
+/* Кнопка */
+.btn-modal {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 15px 6px -5px rgba(28, 47, 61, 0.2);
+    -moz-box-shadow: 0px 15px 6px -5px rgba(28, 47, 61, 0.2);
+    box-shadow: 0px 15px 6px -5px rgba(28, 47, 61, 0.2);
+    background-color: rgb(245, 82, 117);
+    border: none;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:24px;
+    padding:11px 60px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    border-radius: 30px;
+  }
+  .btn-modal:hover {
+    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    background-color: #527c82;
+  }
+  
+  /* Модальное окно */
+  .modal-block { 
+    position: absolute;
+    background-color:#527c82;
+    color: #fff;
+    width: 801;
+    height: 877px;
+    transition: all .5s;
+    font-family: 'Raleway', sans-serif;
+    z-index: 999;
+   /*  display: none; */
+     
+  }

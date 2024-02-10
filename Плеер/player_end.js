@@ -72,3 +72,6 @@ function pause () {
     gif.pause();
 }
  */
+
+let btn_modal = document.getElementById('btn_modal')
+let modal_block = document.getElementById('modal-block')
