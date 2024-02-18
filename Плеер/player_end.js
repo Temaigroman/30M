@@ -79,11 +79,12 @@ let openModalBtn = document.getElementById("openModalBtn");
 let closeModalBtn = document.getElementsByClassName("close")[0];
 
 function openModal() {
-  modal.style.display = "block";
+  modal.classList.add('modal_active')
 }
 
 function closeModal() {
-  modal.style.display = "none";
+    modal.classList.remove('modal_active')
+    modal.classList.add('modal')
 }
 
 openModalBtn.addEventListener("click", openModal);
