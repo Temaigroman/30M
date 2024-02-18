@@ -1,5 +1,5 @@
 :root {
-    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+--font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .main_space {
 background-color: rgb(245, 82, 117);
@@ -28,7 +28,6 @@ border: solid #1361f1;
 }
 
 .player {
-    background-color: aliceblue;
     width: 70%;
     height: 70%;
     position: relative;
@@ -40,7 +39,7 @@ border: solid #1361f1;
     position: relative;
     left: 380px;
     top: 120px;
-     width: 50%;
+    width: 50%;
     font-size: 24px;
     font-family: var(--font-family); 
 }
@@ -62,6 +61,7 @@ border: solid #1361f1;
     padding:11px 60px;
     text-decoration:none;
     cursor: pointer;
+    font-family: var(--font-family); 
     }
     
     .back:hover {
@@ -70,7 +70,6 @@ border: solid #1361f1;
     }
     .back:active {
         position:relative;
-        top:130px;
     }
     
     .diskription {
@@ -121,8 +120,7 @@ border: solid #1361f1;
     }
     .next:active {
         position:relative;
-        top:120px;
-    }
+          }
 
     .imagesArea {
         width: 100%;
@@ -173,32 +171,6 @@ border: solid #1361f1;
             background: rgb(160, 167, 243);
         }
         
-/* Кнопка */
-.btn-modal {
-    cursor: pointer;
-    color: #fff;
-    text-decoration: none;
-    -webkit-box-shadow: 0px 15px 6px -5px rgba(28, 47, 61, 0.2);
-    -moz-box-shadow: 0px 15px 6px -5px rgba(28, 47, 61, 0.2);
-    box-shadow: 0px 15px 6px -5px rgba(28, 47, 61, 0.2);
-    background-color: rgb(245, 82, 117);
-    border: none;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:24px;
-    padding:11px 60px;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    border-radius: 30px;
-    font-family: var(--font-family); 
-  }
-  .btn-modal:hover {
-    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-    background-color: #527c82;
-    font-family: var(--font-family); 
-  }
-  
-  /* Скрываем модальное окно по умолчанию */
 .modal {
     display: block;
     position: fixed;
@@ -210,6 +182,7 @@ border: solid #1361f1;
     background-color: #0a38cf;
     overflow: auto;
     color:#ffffff;
+    clip-path: polygon(29.55% 0.00%,100.00% 0.00%,100.00% 98.78%,0.00% 100%);
    
 }
     .modal_active {
@@ -225,7 +198,8 @@ border: solid #1361f1;
         animation-name:ani;
         animation-duration: 2.5s;
         animation-fill-mode: forwards;
-    }
+        clip-path: polygon(29.55% 0.00%,100.00% 0.00%,99.44% 100%,0.00% 100%);
+            }
     @keyframes ani {
         from { 
             transform: translateX(+2500px);
@@ -239,7 +213,7 @@ border: solid #1361f1;
   .modal-content {
     background-color: #0a38cf;
     margin: 10% auto;
-    padding: 20px;
+    padding: 60px;
     width: 60%;
     height: 70%;
     font-size: 36px;
