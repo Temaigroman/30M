@@ -33,7 +33,7 @@ border: solid #1361f1;
     position: relative;
     top: 80px;
     margin: auto;
-    border-radius: 50px;
+    border-radius: 60px;
 }
 .traning {
     position: relative;
@@ -144,7 +144,7 @@ border: solid #1361f1;
         .activeImage {
             background: rgb(115, 126, 250);
             display: flex;
-            border-radius: 20px;
+            border-radius: 60px;
         }
        
         .pointsAreaSize {
