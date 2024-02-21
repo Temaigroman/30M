@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="questionnaire.css">
+    
+    
     <title>Questionnaire</title>
 </head>
 
@@ -15,11 +17,11 @@
         </header>
         <div class="answers_ready">
             <div class="ready">
-                <input type="radio" name="chose" id="opt1" value="USD" />
+                <input type="radio"  name="chose_ready" value="0"/>
                 <label for="opt1">Ес,сер</label>
-                <input type="radio" name="chose" id="opt2" value="EURO" />
+                <input type="radio"  name="chose_ready" value="1" />
                 <label for="opt2">Ноу сер,сорри</label>
-                <input type="radio" name="chose" id="opt3" value="CN" />
+                <input type="radio"  name="chose_ready" value="2"/>
                 <label for="opt3">Нет, но готов ебашить</label>
             </div>
         </div>
@@ -28,70 +30,70 @@
             <div class="muscles">
                 <span>Какую группу мышц хочешь потренить, пупс?</span>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" value="0" name="chose_muscles">
                     <span>Мышцы</span>
                 </label>
-                <label class="checkbox-btn">
-                    <input type="checkbox">
+                <label class="checkbox-btn" >
+                    <input type="checkbox" name="chose_muscles" value="1">
                     <span>Мышцы</span>
                 </label>
-                <label class="checkbox-btn">
-                    <input type="checkbox">
+                <label class="checkbox-btn" >
+                    <input type="checkbox" name="chose_muscles" value="2">
                     <span>Мышцы</span>
                 </label>
-                <label class="checkbox-btn">
-                    <input type="checkbox">
+                <label class="checkbox-btn" >
+                    <input type="checkbox" name="chose_muscles" value="3">
                     <span>Мышцы</span>
                 </label>
-                <label class="checkbox-btn">
-                    <input type="checkbox">
+                <label class="checkbox-btn" >
+                    <input type="checkbox" name="chose_muscles" value="4">
                     <span>Мышцы</span>
                 </label>
-                <label class="checkbox-btn">
-                    <input type="checkbox">
+                <label class="checkbox-btn" >
+                    <input type="checkbox" name="chose_muscles" value="5">
                     <span>Мышцы</span>
                 </label>
-                <label class="checkbox-btn">
-                    <input type="checkbox">
+                <label class="checkbox-btn" >
+                    <input type="checkbox" name="chose_muscles" value="6">
                     <span>Мышцы</span>
                 </label>
-                <label class="checkbox-btn">
-                    <input type="checkbox">
+                <label class="checkbox-btn" >
+                    <input type="checkbox" name="chose_muscles" value="7">
                     <span>Мышцы</span>
                 </label>
             </div>
             <div class="qualities">
                 <span>А какие качества хочешь малыш?</span>
-                <label class="checkbox-btn">
-                    <input type="checkbox">
+                <label class="checkbox-btn" >
+                    <input type="checkbox" name="chose_qualities" value="0">
                     <span>Качества</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_qualities" value="1">
                     <span>Качества</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_qualities" value="2">
                     <span>Качества</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_qualities" value="3">
                     <span>Качества</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_qualities" value="4">
                     <span>Качества</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_qualities" value="5">
                     <span>Качества</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_qualities" value="6">
                     <span>Качества</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_qualities" value="7">
                     <span>Качества</span>
                 </label>
             </div>
@@ -101,31 +103,30 @@
             <div class="imagine"></div>
             <div class="what_we_have">
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_equpment" value="0">
                     <span>Оборудование</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_equpment" value="1">
                     <span>Оборудование</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_equpment" value="2">
                     <span>Оборудование</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_equpment" value="3">
                     <span>Оборудование</span>
                 </label>
                 <label class="checkbox-btn">
-                    <input type="checkbox">
+                    <input type="checkbox" name="chose_equpment" value="4">
                     <span>Оборудование</span>
                 </label>
             </div>
         </div>
-        <button class="push">Подобрать тренировочку</button>
+        <button class="push" id="push_answerts">Подобрать тренировочку</button>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <source src="questionnaire.js">
+    <script src="questionnaire.js"></script>
 </body>
 
 </html>
