@@ -11,8 +11,6 @@ btn.onclick = function () {
     for (let i = 0; i < ready.length; ++i) {
         if (ready[i].checked) {
             user_chose['Ready'].push(ready[i].value);
-            //let decision_ready = ready[i];
-            //console.log(decision_ready.value); //что бы проверять выбор
         }
     }
 
@@ -20,9 +18,6 @@ btn.onclick = function () {
     for (let k = 0; k < muscles.length; ++k) {
         if (muscles[k].checked) {
             user_chose['Muscles'].push(muscles[k].value);
-            //let decision_muscles = muscles[k];
-            //console.log(decision_muscles.value);
-
         }
     }
 
@@ -30,22 +25,28 @@ btn.onclick = function () {
     for (let o = 0; o < muscles.length; ++o) {
         if (qualities[o].checked) {
             user_chose['Qualities'].push(qualities[o].value);
-            //let decision_qualities = qualities[o];
-            //console.log(decision_qualities.value);
         }
     }
-    
+
     let equpment = document.getElementsByName("chose_equpment");
     for (let j = 0; j < equpment.length; ++j) {
         if (equpment[j].checked) {
             user_chose['Equpment'].push(equpment[j].value);
-            //let decision_equpment = qualities[j];
-            //console.log(decision_equpment.value);
-
         }
 
     }
-    console.log(user_chose);
+    let json = JSON.stringify(user_chose)
+    console.log(json)
+    fetch('http://your-api-url.com', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user_chose)
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch((error) => console.error('Error:', error));
 }
 
 
