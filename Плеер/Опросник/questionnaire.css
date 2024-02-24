@@ -113,28 +113,53 @@
 
 .muscles_qualities {
     width: 80%;
-    height: 330px;
+    height: 500px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: auto;
     margin-top: 75px;
     background-color: var(--background-colorB);
+    
 }
 
-.muscles {
+.muscles_list {
     width: 50%;
     height: 100%;
     background-color: var(--background-colorB);
-
-
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.qualities {
+.qualities_list {
     width: 50%;
     height: 100%;
     background-color: var(--background-colorR);
-    clip-path: polygon(25.17% 0.00%, 100% 0%, 100.00% 99.80%, 0% 100%);
+     clip-path: polygon(25.17% 0.00%, 100% 0%, 100.00% 99.80%, 0% 100%); 
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.muscles {
+width: 50%;
+height:70%;
+
+
+}
+ 
+.qualities {
+    width: 50%;
+    height:70%;
+    
+
+    
 }
 
 .empty {
@@ -214,8 +239,10 @@
     cursor: pointer;
     line-height: 30px;
     border: 1px solid #999;
-    border-radius: 45px;
-    background-color: aqua;
+    background-color: aqua; 
+    width: 95px;
+    height: 50px;
+
 }
 
 /* Checked */
