@@ -22,7 +22,7 @@ btn.onclick = function () {
     }
 
     let qualities = document.getElementsByName("chose_qualities");
-    for (let o = 0; o < muscles.length; ++o) {
+    for (let o = 0; o < qualities.length; ++o) {
         if (qualities[o].checked) {
             user_chose['Qualities'].push(qualities[o].value);
         }

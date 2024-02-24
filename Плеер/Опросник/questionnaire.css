@@ -2,26 +2,6 @@
     --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --background-colorR: #D847AF;
     --background-colorB: rgba(0, 143, 178, 1);
-    font-family: Judson;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.67em;
-    text-align: center;
-
-    font-family: Jura;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.14em;
-    text-align: center;
-
-}
-
-.main {
-    min-width: 856px;
-    /* min-height: 1416px; */
-
 }
 
 .header {
@@ -30,6 +10,7 @@
     background-color: #D847AF;
     display: flex;
     justify-content: right;
+    margin-bottom: 50px;
 }
 
 .logo {
@@ -41,7 +22,6 @@
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 25px;
-
 }
 
 .answers_ready {
@@ -50,7 +30,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--background-colorB);
+    margin-bottom: 50px;
+    flex-direction: column;
 }
+
+
 
 .ready {
     width: 80%;
@@ -63,13 +48,7 @@
     padding-right: 70px;
 }
 
-.answers_ready {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .form_radio_btn {
     display: inline-block;
@@ -88,6 +67,7 @@
     border: 1px solid #000000;
     border-radius: 6px;
     user-select: none;
+    background-color: aqua;
 }
 
 .form_radio_btn input[type=radio]:checked+label {
@@ -107,8 +87,6 @@
     justify-content: center;
     color: #ffff;
     font-size: 12px;
-
-
 }
 
 .muscles_qualities {
@@ -120,14 +98,12 @@
     margin: auto;
     margin-top: 75px;
     background-color: var(--background-colorB);
-    
 }
 
 .muscles_list {
     width: 50%;
     height: 100%;
     background-color: var(--background-colorB);
-   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,8 +115,8 @@
     width: 50%;
     height: 100%;
     background-color: var(--background-colorR);
-     clip-path: polygon(25.17% 0.00%, 100% 0%, 100.00% 99.80%, 0% 100%); 
-   display: flex;
+    clip-path: polygon(25.17% 0.00%, 100% 0%, 100.00% 99.80%, 0% 100%);
+    display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
@@ -148,27 +124,20 @@
 }
 
 .muscles {
-width: 50%;
-height:70%;
-
-
+    width: 50%;
+    height: 70%;
 }
- 
+
 .qualities {
     width: 50%;
-    height:70%;
-    
-
-    
+    height: 70%;
 }
 
 .empty {
-
     width: 100%;
     height: 300px;
     margin-top: 75px;
     background-color: #cccbcb;
-
 }
 
 .equpment {
@@ -179,22 +148,25 @@ height:70%;
     justify-content: center;
     margin: auto;
     margin-top: 75px;
-
 }
 
 .imagine {
     width: 40%;
     height: 253px;
     background-color: #cccbcb;
-
-
 }
 
 .what_we_have {
     width: 50%;
-    height: 283px;
+    height: 400px;
     background-color: var(--background-colorB);
     margin-left: 2%;
+}
+
+.what_we_have label {
+    margin-left: 50px;
+    margin-top: 25px;
+
 }
 
 .push {
@@ -206,6 +178,7 @@ height:70%;
     border: none;
     cursor: pointer;
     margin-top: 60px;
+    margin-left: 700px;
 }
 
 .push:hover {
@@ -239,18 +212,16 @@ height:70%;
     cursor: pointer;
     line-height: 30px;
     border: 1px solid #999;
-    background-color: aqua; 
+    background-color: aqua;
     width: 95px;
     height: 50px;
 
 }
 
-/* Checked */
 .checkbox-btn input[type=checkbox]:checked+span {
     background: var(--background-colorR);
 }
 
-/* Hover */
 .checkbox-btn:hover {
     color: #666;
 }
