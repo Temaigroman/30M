@@ -121,7 +121,10 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+   }
+   .qualities_list h1 {
+    margin-left: 100px;
+   }
 
 .muscles {
     width: 50%;
