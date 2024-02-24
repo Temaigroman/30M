@@ -2,7 +2,7 @@
     --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --background-colorR: #D847AF;
     --background-colorB: rgba(0, 143, 178, 1);
-    /* font-family: Judson;
+    font-family: Judson;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
@@ -14,7 +14,14 @@
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.14em;
-    text-align: center; */
+    text-align: center;
+
+}
+
+.main {
+    min-width: 856px;
+    /* min-height: 1416px; */
+
 }
 
 .header {
@@ -34,31 +41,39 @@
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 25px;
+
 }
-/* .questiont {
-    width: 100%;
-    text-align: end; 
-} */
+
 .answers_ready {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 80%;
-    height: 350px;
+    width: 100%;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-colorB);
-    flex-flow: column;
-    }
+}
 
-.form_radio_btn {
+.ready {
     width: 80%;
-    height:60%;
+    height: 200px;
+    background-color: rgba(0, 143, 178, 1);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.answers_ready {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .form_radio_btn input[type=radio] {
@@ -66,18 +81,13 @@
 }
 
 .form_radio_btn label {
+    display: inline-block;
     cursor: pointer;
     padding: 0px 15px;
     line-height: 34px;
     border: 1px solid #000000;
     border-radius: 6px;
     user-select: none;
-    width: 20%;
-    height: 80%;
-    background-color: #ffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .form_radio_btn input[type=radio]:checked+label {
@@ -91,12 +101,14 @@
 .never_stop {
     width: 100%;
     height: 144px;
-    background-color: var(--background-colorR);
+    background-color: #D847AF;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffff;
     font-size: 12px;
+
+
 }
 
 .muscles_qualities {
@@ -104,23 +116,50 @@
     height: 500px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: auto;
     margin-top: 75px;
     background-color: var(--background-colorB);
+    
 }
 
-.muscles {
-    width: 40%;
+.muscles_list {
+    width: 50%;
     height: 100%;
     background-color: var(--background-colorB);
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.qualities {
+.qualities_list {
     width: 50%;
     height: 100%;
     background-color: var(--background-colorR);
-    clip-path: polygon(25.17% 0.00%, 100% 0%, 100.00% 99.80%, 0% 100%);
+     clip-path: polygon(25.17% 0.00%, 100% 0%, 100.00% 99.80%, 0% 100%); 
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.muscles {
+width: 50%;
+height:70%;
+
+
+}
+ 
+.qualities {
+    width: 50%;
+    height:70%;
+    
+
+    
 }
 
 .empty {
@@ -129,6 +168,7 @@
     height: 300px;
     margin-top: 75px;
     background-color: #cccbcb;
+
 }
 
 .equpment {
@@ -139,12 +179,15 @@
     justify-content: center;
     margin: auto;
     margin-top: 75px;
+
 }
 
 .imagine {
     width: 40%;
     height: 253px;
     background-color: #cccbcb;
+
+
 }
 
 .what_we_have {
@@ -162,7 +205,7 @@
     border-radius: 45px;
     border: none;
     cursor: pointer;
-    margin: auto;
+    margin-top: 60px;
 }
 
 .push:hover {
@@ -196,14 +239,18 @@
     cursor: pointer;
     line-height: 30px;
     border: 1px solid #999;
-    border-radius: 45px;
-    background-color: aqua;
+    background-color: aqua; 
+    width: 95px;
+    height: 50px;
+
 }
 
+/* Checked */
 .checkbox-btn input[type=checkbox]:checked+span {
     background: var(--background-colorR);
 }
 
+/* Hover */
 .checkbox-btn:hover {
     color: #666;
 }
