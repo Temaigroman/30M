@@ -47,4 +47,9 @@ btn.onclick = function () {
         .then(response => response.json())
         .then(data => console.log(data))
         .catch((error) => console.error('Error:', error));
+<<<<<<< HEAD:Плеер и опросник/Опросник/questionnaire.js
 }
+=======
+
+    }
+>>>>>>> 10b9c53a9d0c9bdddefe2d701cde60dc522728f8:Плеер/Опросник/questionnaire.js
