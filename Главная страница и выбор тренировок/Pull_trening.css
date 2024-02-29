@@ -1,0 +1,46 @@
+body {
+    margin: 0px auto;
+    width: 866px;
+}
+header {
+    background-color: #D847AF;
+    width: 866px;
+    height: 42px;
+    margin: 0px auto;
+    
+}
+header:hover{
+    border: 1px solid #008FB2;
+    cursor: pointer;
+}
+.logo {
+    width: 31px;
+    height: 28px;
+    border-radius: 20px;
+    background-color: #008FB2;
+    float: right;
+    position: relative;
+    margin-top: 0.8%;
+    margin-right: 2.2%;
+    
+}
+.tren {
+    width: 263px;
+    height: 122px;
+    background-color: #D9D9D9;
+   
+}
+.tren:hover {
+    border: 1px solid #008FB2;
+    cursor: pointer;
+}
+#win1 {
+    margin-top: 5%;
+}
+#win2 {
+    margin-top: 3%;
+} 
+
+a { 
+    text-decoration: none;
+}
