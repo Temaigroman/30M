@@ -1,0 +1,36 @@
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    position: fixed;
+    z-index: 99;
+    margin: 0;
+    background-color: #D847AF;
+}
+
+.header a {
+    color: aquamarine;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.push {
+    width: 440px;
+    height: 30px;
+    background-color: #D847AF;
+    color: #ffff;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 75px;
+}
+
+.content {
+    position: relative;
+    top: 100px;
+}
