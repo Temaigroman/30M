@@ -10,14 +10,14 @@ ScrollSmoother.create({
 
 //Текст печатной машинкой
 let textdata = [
-	"WORLD", "MAIND", 
+	"ORLD", "AIND",
 ];
 
 let ref = document.getElementById("text");
+let first_latter = document.getElementById("first_latter");
 let ind = 0;
 let cInd = 0;
 let remove = false;
-let transform =[];
 
 function textTypeFunction() {
 	if (ind < textdata.length) {
@@ -28,7 +28,7 @@ function textTypeFunction() {
 				currentText.charAt(cInd);
 			cInd++;
 			setTimeout(textTypeFunction, 100);
-			} else if (remove && cInd >= 0) {
+		} else if (remove && cInd >= 0) {
 			ref.textContent =
 				currentText.substring(0, cInd);
 			cInd--;
@@ -46,4 +46,7 @@ function textTypeFunction() {
 	}
 }
 
+
 textTypeFunction();
+
+//first_latter.classList.add('transform_latter');

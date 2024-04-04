@@ -91,12 +91,13 @@ body {
     text-shadow: 0 0 15px #9d822b;
 }
 
-.transform_latter::first-letter {
-    transform: rotate(180deg);
+.transform_latter{
+     transform: rotate(180deg);
     display: inline-block;
     transition: transform 0.5s ease;
-    }
-
+    vertical-align:auto; 
+       }
+    
 .layers__title {
     font-size: calc(var(--index) * 2.65);
     letter-spacing: calc(var(--index) / 2.25);
