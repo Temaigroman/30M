@@ -91,11 +91,17 @@ body {
     text-shadow: 0 0 15px #9d822b;
 }
 
-.transform_latter::first-letter {
+.transform_latter {
     transform: rotate(180deg);
+}
+
+.return_latter {
     display: inline-block;
     transition: transform 0.5s ease;
-    }
+    position: relative;
+    top: 0.195vw;
+
+}
 
 .layers__title {
     font-size: calc(var(--index) * 2.65);
@@ -144,4 +150,3 @@ body {
 .content {
     will-change: transform;
 }
-
